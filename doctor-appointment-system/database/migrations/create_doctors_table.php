@@ -15,13 +15,13 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->string('specialization');
-        $table->string('email')->unique();
-        $table->string('phone');
-        $table->string('clinic_address');
+        $table->text('bio');
+        $table->string('clinic_location');
         $table->timestamps();
     });
 }
 
+    
     /**
      * Reverse the migrations.
      */
