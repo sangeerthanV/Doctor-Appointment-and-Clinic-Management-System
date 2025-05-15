@@ -29,7 +29,8 @@ class DoctorController extends Controller
     // Admin only: store doctor details
     public function store(Request $request)
     {
-        $request->validate([
+        $request->validate
+        ([
             'name' => 'required',
             'specialization' => 'required',
         ]);
