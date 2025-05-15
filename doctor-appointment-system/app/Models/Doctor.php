@@ -11,7 +11,6 @@ class Doctor extends Model
 
     protected $fillable = ['name', 'specialization', 'bio', 'clinic_location'];
 
-    // A doctor can have many appointments
     public function appointments()
     {
         return $this->hasMany(Appointment::class);
